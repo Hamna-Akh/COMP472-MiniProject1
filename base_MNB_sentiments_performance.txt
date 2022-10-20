@@ -1,0 +1,21 @@
+Base MNB Performance for sentiments
+---------------------------------
+Hyper-parameters: {'alpha': 1.0, 'class_prior': None, 'fit_prior': True}
+
+Confusion matrix:
+[[1714 2469 3065  502]
+ [2449 3595 4292  736]
+ [2555 3855 4589  740]
+ [ 811 1194 1561  237]]
+
+Classification report:
+              precision    recall  f1-score   support
+
+    negative       0.23      0.22      0.22      7750
+     neutral       0.32      0.32      0.32     11072
+    positive       0.34      0.39      0.36     11739
+   ambiguous       0.11      0.06      0.08      3803
+
+    accuracy                           0.29     34364
+   macro avg       0.25      0.25      0.25     34364
+weighted avg       0.28      0.29      0.29     34364

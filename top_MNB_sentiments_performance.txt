@@ -1,0 +1,23 @@
+Base MLP Performance for sentiments
+---------------------------------
+Hyper-parameters: {'cv': None, 'error_score': nan, 'estimator__alpha': 1.0, 'estimator__class_prior': [0.224, 0.322, 0.343, 0.111], 'estimator__fit_prior': True, 'estimator': MultinomialNB(class_prior=[0.224, 0.322, 0.343, 0.111]), 'n_jobs': None, 'param_grid': {'alpha': [1e-10, 0.5, 1.5, 3.0]}, 'pre_dispatch': '2*n_jobs', 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 0}
+
+Best parameters: {'alpha': 1.5}
+
+Confusion matrix:
+[[1656 2587 3116  391]
+ [2367 3756 4386  563]
+ [2455 4028 4705  551]
+ [ 790 1244 1590  179]]
+
+Classification report:
+              precision    recall  f1-score   support
+
+    negative       0.23      0.21      0.22      7750
+     neutral       0.32      0.34      0.33     11072
+    positive       0.34      0.40      0.37     11739
+   ambiguous       0.11      0.05      0.07      3803
+
+    accuracy                           0.30     34364
+   macro avg       0.25      0.25      0.25     34364
+weighted avg       0.28      0.30      0.29     34364
