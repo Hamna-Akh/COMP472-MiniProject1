@@ -1,0 +1,23 @@
+Base MLP Performance for sentiments
+---------------------------------
+Hyper-parameters: {'cv': None, 'error_score': nan, 'estimator__activation': 'relu', 'estimator__alpha': 0.0001, 'estimator__batch_size': 'auto', 'estimator__beta_1': 0.9, 'estimator__beta_2': 0.999, 'estimator__early_stopping': False, 'estimator__epsilon': 1e-08, 'estimator__hidden_layer_sizes': (100,), 'estimator__learning_rate': 'constant', 'estimator__learning_rate_init': 0.001, 'estimator__max_fun': 15000, 'estimator__max_iter': 2, 'estimator__momentum': 0.9, 'estimator__n_iter_no_change': 10, 'estimator__nesterovs_momentum': True, 'estimator__power_t': 0.5, 'estimator__random_state': None, 'estimator__shuffle': True, 'estimator__solver': 'adam', 'estimator__tol': 0.0001, 'estimator__validation_fraction': 0.1, 'estimator__verbose': False, 'estimator__warm_start': False, 'estimator': MLPClassifier(max_iter=2), 'n_jobs': None, 'param_grid': {'activation': ['logistic', 'tanh', 'relu', 'identity'], 'hidden_layer_sizes': [(30, 50), (10, 10, 10)], 'solver': ['adam', 'sgd']}, 'pre_dispatch': '2*n_jobs', 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 0}
+
+Best parameters: {'activation': 'relu', 'hidden_layer_sizes': (30, 50), 'solver': 'adam'}
+
+Confusion matrix:
+[[1726 2677 2772  554]
+ [2463 3832 3927  817]
+ [2672 4117 4250  798]
+ [ 834 1289 1366  270]]
+
+Classification report:
+              precision    recall  f1-score   support
+
+    negative       0.22      0.22      0.22      7729
+     neutral       0.32      0.35      0.33     11039
+    positive       0.35      0.36      0.35     11837
+   ambiguous       0.11      0.07      0.09      3759
+
+    accuracy                           0.29     34364
+   macro avg       0.25      0.25      0.25     34364
+weighted avg       0.28      0.29      0.29     34364
