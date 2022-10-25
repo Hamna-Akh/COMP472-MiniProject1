@@ -3,19 +3,19 @@ Base MLP Performance for sentiments
 Hyper-parameters: {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': (100,), 'learning_rate': 'constant', 'learning_rate_init': 0.001, 'max_fun': 15000, 'max_iter': 2000, 'momentum': 0.9, 'n_iter_no_change': 10, 'nesterovs_momentum': True, 'power_t': 0.5, 'random_state': None, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False, 'warm_start': False}
 
 Confusion matrix:
-[[1628 2537 2891  673]
- [2333 3695 4016  995]
- [2525 3949 4350 1013]
- [ 815 1241 1386  317]]
+[[3 2 3 1]
+ [1 1 0 0]
+ [8 1 5 0]
+ [2 0 1 0]]
 
 Classification report:
               precision    recall  f1-score   support
 
-    negative       0.22      0.21      0.22      7729
-     neutral       0.32      0.33      0.33     11039
-    positive       0.34      0.37      0.36     11837
-   ambiguous       0.11      0.08      0.09      3759
+           0       0.21      0.33      0.26         9
+           1       0.25      0.50      0.33         2
+           2       0.56      0.36      0.43        14
+           3       0.00      0.00      0.00         3
 
-    accuracy                           0.29     34364
-   macro avg       0.25      0.25      0.25     34364
-weighted avg       0.28      0.29      0.29     34364
+    accuracy                           0.32        28
+   macro avg       0.25      0.30      0.26        28
+weighted avg       0.36      0.32      0.33        28

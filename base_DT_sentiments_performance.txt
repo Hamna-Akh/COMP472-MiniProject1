@@ -3,19 +3,19 @@ Base DT Performance for sentiments
 Hyper-parameters: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'random_state': None, 'splitter': 'best'}
 
 Confusion matrix:
-[[2175 2554 2458  563]
- [3144 3699 3401  828]
- [3375 3850 3639  875]
- [1107 1199 1238  259]]
+[[3 0 6 0]
+ [0 1 1 0]
+ [7 1 5 1]
+ [2 0 1 0]]
 
 Classification report:
               precision    recall  f1-score   support
 
-    negative       0.22      0.28      0.25      7750
-     neutral       0.33      0.33      0.33     11072
-    positive       0.34      0.31      0.32     11739
-   ambiguous       0.10      0.07      0.08      3803
+           0       0.25      0.33      0.29         9
+           1       0.50      0.50      0.50         2
+           2       0.38      0.36      0.37        14
+           3       0.00      0.00      0.00         3
 
-    accuracy                           0.28     34364
-   macro avg       0.25      0.25      0.25     34364
-weighted avg       0.28      0.28      0.28     34364
+    accuracy                           0.32        28
+   macro avg       0.28      0.30      0.29        28
+weighted avg       0.31      0.32      0.31        28
