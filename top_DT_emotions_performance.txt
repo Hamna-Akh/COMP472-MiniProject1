@@ -2,40 +2,42 @@ Base MLP Performance for emotions
 ---------------------------------
 Hyper-parameters: {'cv': None, 'error_score': nan, 'estimator__ccp_alpha': 0.0, 'estimator__class_weight': None, 'estimator__criterion': 'gini', 'estimator__max_depth': None, 'estimator__max_features': None, 'estimator__max_leaf_nodes': None, 'estimator__min_impurity_decrease': 0.0, 'estimator__min_samples_leaf': 1, 'estimator__min_samples_split': 2, 'estimator__min_weight_fraction_leaf': 0.0, 'estimator__random_state': None, 'estimator__splitter': 'best', 'estimator': DecisionTreeClassifier(), 'n_jobs': None, 'param_grid': {'criterion': ['gini', 'entropy'], 'max_depth': [5, 10], 'min_samples_split': [2, 3, 4]}, 'pre_dispatch': '2*n_jobs', 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 0}
 
-Best parameters: {'criterion': 'gini', 'max_depth': 10, 'min_samples_split': 3}
+Best parameters: {'criterion': 'gini', 'max_depth': 5, 'min_samples_split': 3}
 
 Confusion matrix:
-[[11  1  0  0  1  0  0  1  0  0  0  0  0]
- [ 1  0  0  1  0  0  0  0  0  0  0  0  0]
- [ 1  0  0  0  0  0  0  0  0  0  0  0  0]
- [ 0  0  0  0  0  0  0  0  0  0  0  0  0]
- [ 0  0  0  1  0  0  0  0  0  0  0  0  0]
- [ 4  0  0  0  0  0  0  0  0  0  0  0  0]
- [ 1  0  0  0  0  0  0  0  0  0  0  0  0]
- [ 0  0  0  0  0  0  0  0  0  0  0  0  0]
- [ 1  0  0  0  0  0  0  0  0  0  0  0  0]
- [ 1  0  0  0  0  0  0  0  0  0  0  0  0]
- [ 0  0  0  1  0  0  0  0  0  0  0  0  0]
- [ 1  0  0  0  0  0  0  0  0  0  0  0  0]
- [ 1  0  0  0  0  0  0  0  0  0  0  0  0]]
+[[8 1 2 0 0 0 0 0 0 0 0 0 0 0]
+ [5 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [2 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [1 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [1 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [1 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [3 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [1 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [1 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [1 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [1 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [1 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 1 0 0 0 0 0 0 0 0 0 0 0]]
 
 Classification report:
               precision    recall  f1-score   support
 
-           2       0.50      0.79      0.61        14
+           0       0.31      0.73      0.43        11
+           2       0.00      0.00      0.00         5
+           3       0.00      0.00      0.00         0
            4       0.00      0.00      0.00         2
+           5       0.00      0.00      0.00         1
            6       0.00      0.00      0.00         1
-           7       0.00      0.00      0.00         0
            8       0.00      0.00      0.00         1
-          10       0.00      0.00      0.00         4
-          13       0.00      0.00      0.00         1
-          14       0.00      0.00      0.00         0
+           9       0.00      0.00      0.00         3
+          12       0.00      0.00      0.00         1
+          14       0.00      0.00      0.00         1
           16       0.00      0.00      0.00         1
-          17       0.00      0.00      0.00         1
           18       0.00      0.00      0.00         1
-          21       0.00      0.00      0.00         1
-          24       0.00      0.00      0.00         1
+          20       0.00      0.00      0.00         1
+          23       0.00      0.00      0.00         1
 
-    accuracy                           0.39        28
-   macro avg       0.04      0.06      0.05        28
-weighted avg       0.25      0.39      0.31        28
+    accuracy                           0.27        30
+   macro avg       0.02      0.05      0.03        30
+weighted avg       0.11      0.27      0.16        30
